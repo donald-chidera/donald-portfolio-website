@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset = "utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Donclinton's Personal Portfolio Website</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/b5bd4f3044.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <img src="pictures/logo.png" class="logo">
+                    <ul id="sidemenu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">My Services</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fa-solid fa-ellipsis-vertical" onclick="openmenu()"></i>
+                </nav>
+                <div class="header-text">
+                    <p>Front-end Software Engineer</p>
+                    <h1> I'm <span>Donald</span> Clinton <br> from Nigeria.</h1>
+                </div>
+            </div>
+        </div>
+<!------------------------about------------------------->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="pictures/about1.jpeg" id="image1" onclick="changeImage()">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p> I am a passionate software engineering intern eager to learn and contribute to your team.
+                            Proficient in Front-end development tools, I possess a strong foundation in programming with languages like JavaScript and Java.
+                            I am enthusiastic about enhancing my skills and joining the workforce to improve my programming expertise. 
+                            Ready to collaborate and learn from experienced professionals, I am excited about the opportunity to contribute meaningfully to your projects.</p>
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                            <p class="tab-links" onclick="opentab('awards')">Awards</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>JavaScript</span><br>Language of the web</li>
+                                <li><span>Web Development</span><br>Web app Development</li>
+                                <li><span>CSS</span><br>Styling webpages with CSS</li>
+                                <li><span>UI/UX</span><br>Designing Web interfaces</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>February 2020 - current</span><br>Admiralty University of Nigeria - Ogwashi-Uku <br> Bachelor's degree in Software Engineering</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents"id="awards" >
+                            <ul>
+                                <li><span>March 2023</span><br>Jobberman Soft Skill Course For Employer Partners. </li>
+                                <li>Jobberman offers six courses on Coursera, which equip workers with skills in business etiquette, emotional intelligence, personal effectiveness, creativity, effective communication. This partnership is part of Jobberman's ambitious goal to upskill five million young Nigerians in the next five years and providing more value to its participants with a cobranded certificate from Coursera, recognized by employers globally. Jobberman is the only recruitment services platform in Nigeria that offers free training and placement of candidates in dignified work. </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-------------------services---------------------->
+        <div id="services">
+            <div class="container">
+                <h1 class="sub-title">My Services</h1>
+                <div class="services-list">
+                    <div>
+                        <i class="fa-brands fa-square-js"></i>
+                        <h2>JavaScript</h2>
+                        <p> For dynamic, interactive websites</p>
+                        <a href="mailto:donclintonokwuchukwu@gmail.com?subject= I need your JavaScript services">Learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-layer-group"></i>
+                        <h2>Web Development</h2>
+                        <p>Develop a visual appealing, user friendly, and responsive website</p>
+                        <a href="mailto:donclintonokwuchukwu@gmail.com?subject= I need your Web Development services">Learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-brush"></i>
+                        <h2>CSS</h2>
+                        <p>For consistent styling and visual stunning websites</p>
+                        <a href="mailto:donclintonokwuchukwu@gmail.com?subject= I need your CSS services">Learn more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!------------------------contact------------------------->  
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fa-solid fa-envelope"></i>donclintonokwuchukwu@gmail.com</p>
+                        <p><i class="fa-solid fa-phone"></i>09131292749</p>
+                        <div class="social-icons">
+                            <a href="wa.link/f9xoid"><i class="fa-brands fa-whatsapp"> </i></a>
+                            <a href="https://www.linkedin.com/in/donclinton-okwuchukwu-361438213"><i class="fa-brands fa-linkedin"> </i></a>
+                            <a href="https://x.com/its_donaldc?t=hyxiaXRJWoeHTItwxYAnNg&s=09"><i class="fa-brands fa-twitter"> </i></a>
+                        </div>
+                        <a href="pictures/Resume202311050752.pdf" download class="btn btn2">Download CV</a>
+                    </div>
+                    <div class="contact-right">
+                        <form>
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="email" placeholder="Your Email" required>
+                            <textarea name="Message" rows="6" placeholder="Send a Message"></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>
+                        <span id="msg"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright © Donald. Made by Donclinton Okwuchukwu</p>
+            </div>
+        </div>      
+
+        <script>
+            //about section - skills, education and awards
+            let tablinks = document.getElementsByClassName("tab-links");
+            let tabcontents = document.getElementsByClassName("tab-contents");
+            function opentab(tabName){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link");
+                }
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabName).classList.add("active-tab");
+            }
+        </script>
+
+        <script>
+            //navivation for smaller devices
+            let sidemenu = document.getElementById("sidemenu");
+            function openmenu(){
+                sidemenu.style.right = "0";
+            }
+            function closemenu(){
+                sidemenu.style.right = "-200px";
+            }
+        </script>
+
+        <script>
+            //form section - still need work in this area
+            const msg = document.getElementById("msg");
+
+            form.addEventListener('submit', e => {
+                e.preventDefault()
+                fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                    msg.innerHTML = "Message Sent successfully"
+                    setTimeout(function(){
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+            })
+            .catch(error => console.log('Error!', error.message))
+        })
+        </script>
+
+        <script>
+            //To change the image on my about when clicked
+            function changeImage(){
+                let displayImage = document.getElementById("image1")
+                if (displayImage.src.match('pictures/about1.jpeg')){
+                    displayImage.src = 'pictures/about.png'
+                } else if(displayImage.src.match('pictures/about.png')){
+                    displayImage.src = 'pictures/IMG_3151.jpeg'
+                } else if(displayImage.src.match('pictures/IMG_3151.jpeg')){
+                    displayImage.src = 'pictures/IMG_3155.jpeg'
+                } else {
+                    displayImage.src = 'pictures/about1.jpeg';
+                }
+            }
+        </script>
+    </body>
+</html>
